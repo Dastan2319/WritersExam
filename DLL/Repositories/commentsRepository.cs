@@ -35,7 +35,7 @@ namespace DLL.Repositories
             return db.comments.Where(predicate).ToList();
         }
 
-        public comments Get(int id)
+        public comments Get(int? id)
         {
             return db.comments.Find(id);
         }

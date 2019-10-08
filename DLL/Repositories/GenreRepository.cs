@@ -35,7 +35,7 @@ namespace DLL.Repositories
             return db.Genre.Where(predicate).ToList();
         }
 
-        public Genre Get(int id)
+        public Genre Get(int? id)
         {
             return db.Genre.Find(id);
         }

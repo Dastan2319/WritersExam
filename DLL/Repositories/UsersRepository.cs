@@ -35,10 +35,12 @@ namespace DLL.Repositories
             return db.Users.Where(predicate).ToList();
         }
 
-        public Users Get(int id)
+        public Users Get(int? id)
         {
             return db.Users.Find(id);
         }
+
+        
 
         public IEnumerable<Users> GetAll()
         {

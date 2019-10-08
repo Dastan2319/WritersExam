@@ -35,7 +35,9 @@ namespace DLL.Repositories
         {
             get
             {
-                throw new NotImplementedException();
+                if (commentsRepository == null)
+                    commentsRepository = new commentsRepository(db);
+                return commentsRepository;
             }
         }
 
@@ -43,7 +45,9 @@ namespace DLL.Repositories
         {
             get
             {
-                throw new NotImplementedException();
+                if (genreRepository == null)
+                    genreRepository = new GenreRepository(db);
+                return genreRepository;
             }
         }
 
@@ -51,13 +55,15 @@ namespace DLL.Repositories
         {
             get
             {
-                throw new NotImplementedException();
+                if (usersRepository == null)
+                    usersRepository = new UsersRepository(db);
+                return usersRepository;
             }
         }
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            Dispose();
         }
 
         public void Save()

@@ -35,7 +35,7 @@ namespace DLL.Repositories
             return db.Books.Where(predicate).ToList();
         }
 
-        public Books Get(int id)
+        public Books Get(int? id)
         {
             return db.Books.Find(id);
         }
