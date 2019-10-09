@@ -54,12 +54,13 @@
     <Compile Include="Entity\Books.cs" />
     <Compile Include="Entity\comments.cs" />
     <Compile Include="Entity\Genre.cs" />
+    <Compile Include="Entity\Login.cs" />
     <Compile Include="Entity\Model1.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
-    <Compile Include="Migrations\201910081636307_first.cs" />
-    <Compile Include="Migrations\201910081636307_first.Designer.cs">
-      <DependentUpon>201910081636307_first.cs</DependentUpon>
+    <Compile Include="Migrations\201910090733213_login.cs" />
+    <Compile Include="Migrations\201910090733213_login.Designer.cs">
+      <DependentUpon>201910090733213_login.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -67,6 +68,7 @@
     <Compile Include="Repositories\BooksRepository.cs" />
     <Compile Include="Repositories\commentsRepository.cs" />
     <Compile Include="Repositories\GenreRepository.cs" />
+    <Compile Include="Repositories\LoginRepository.cs" />
     <Compile Include="Repositories\Repository.cs" />
     <Compile Include="Repositories\UsersRepository.cs" />
   </ItemGroup>
@@ -75,8 +77,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201910081636307_first.resx">
-      <DependentUpon>201910081636307_first.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201910090733213_login.resx">
+      <DependentUpon>201910090733213_login.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

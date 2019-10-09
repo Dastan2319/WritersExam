@@ -4,6 +4,7 @@ namespace DLL
     using System.Data.Entity;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
+    using DLL.Entity;
 
     public partial class Model1 : DbContext
     {
@@ -20,6 +21,7 @@ namespace DLL
         public virtual DbSet<comments> comments { get; set; }
         public virtual DbSet<Genre> Genre { get; set; }
         public virtual DbSet<Users> Users { get; set; }
+        public virtual DbSet<Login> Login { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

@@ -52,6 +52,7 @@
     <Compile Include="DTO\BooksDTO.cs" />
     <Compile Include="DTO\commentsDTO.cs" />
     <Compile Include="DTO\GenreDTO.cs" />
+    <Compile Include="DTO\LoginDTO.cs" />
     <Compile Include="DTO\UsersDTO.cs" />
     <Compile Include="Infrastructure\ServiceModule.cs" />
     <Compile Include="Infrastructure\ValidationException.cs" />
